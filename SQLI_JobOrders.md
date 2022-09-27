@@ -13,7 +13,6 @@ SQL query code:
 Since UPDATE statement is used to query the database, user can add arbitrary values to arbitrary columns inside 'user' table.
 Knowing this, it is possible to craft payload like:
 `15,first_name=(select password from user where user_id=1 limit 1)`  
-`15,first_name=(select password from user where user_id=1 limit 1)` 
 
 This will update 'first_name' with arbitrary data from database. In this example user's password hash will be written inside first_name column.
 Since, first name is reflected in many endpoints in application, this means malicious person can exfiltrate data and control the database using it as a field to extract data. Attackers can also use blind sql injection techniques to extract db information.
