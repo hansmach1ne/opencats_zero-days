@@ -1,4 +1,4 @@
-#SQL injection vulnerability in OpenCats 'Import viewerrors' functionality.
+# SQL injection vulnerability in OpenCats 'Import viewerrors' functionality.
 
 OpenCats version 0.9.6 PHP7.2 suffers from SQL injection vulnerability. This allows attackers control over the application's database.
 
