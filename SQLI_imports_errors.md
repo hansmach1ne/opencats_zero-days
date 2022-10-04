@@ -2,7 +2,7 @@
 
 OpenCats version 0.9.6 PHP7.2 suffers from SQL injection vulnerability. This allows attackers control over the application's database.
 
-User has control over entriesPerPage variable, which allows SQL injection in SELECT statement via GET 'importID' parameter.
+User has control over data that gets passed inside SQL query, which allows SQL injection in SELECT statement via GET 'importID' parameter.
 
 #Poc
 Decided to test this with sqlmap. Let's exfiltrate username and password hashes from the database.  
