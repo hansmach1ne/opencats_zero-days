@@ -23,7 +23,7 @@ This proof of concept exfiltrates administrator user's password hash:
 
 ![PoC](https://user-images.githubusercontent.com/57464251/193683971-60bceb48-21fe-49fb-8a1d-d522383b8ec0.png)
 
-### Bonus, let's crack the hash![Capture](https://user-images.githubusercontent.com/57464251/193794473-ed0a2f71-e268-464b-ac09-e352c79b652e.PNG)
+### Bonus, let's crack the hash
 
 `echo "password:21232f297a57a5a743894a0e4a801fc3" > hash.txt`  
 `john --wordlist=/usr/share/wordlists/rockyou.txt --format=Raw-MD5 hash.txt`  
